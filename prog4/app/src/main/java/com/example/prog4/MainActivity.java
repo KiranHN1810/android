@@ -18,8 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Bitmap bg=Bitmap.createBitmap(720,1280,Bitmap.Config.ARGB_8888);
         ImageView i=(ImageView) findViewById(R.id.imageView);
-        i.setBackground(new BitmapDrawable
-                (bg));
+        i.setBackground(new BitmapDrawable(bg));
         Canvas canvas=new Canvas(bg);
         Paint paint=new Paint();
 
@@ -29,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         paint.setColor(Color.BLUE);
         canvas.drawLine(500,800,500,1110,paint);
 
+        paint.setColor(Color.BLUE);
+        canvas.drawCircle(200,350,150,paint);
 
         paint.setColor(Color.RED);
         canvas.drawRect(50,850,350,1150,paint);
